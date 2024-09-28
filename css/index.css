@@ -1,0 +1,245 @@
+/* /// start global//// */
+
+* ,*::after ,::before , body{
+    margin: 0;
+    padding: 0;
+}
+
+    .container{
+        width: 60%;
+        
+    }
+
+
+:root {
+    --main-color:#ff305b;
+    --padding-block:40px;
+    --small-padding:10px;
+}
+
+
+/* /// end global//// */
+/* /// start nav-var//// */
+.navbar {
+    font-family: "Roboto Condensed", sans-serif;
+    background-color: transparent;
+
+}
+
+ .navo .branding a{
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--main-color);
+}
+.navo .navbar-nav .navo2 {
+    color: var(--main-color);
+}
+ .navo .navbar-nav a{
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+}
+.navo .navbar .fokir .navbar-collapse .navbar-nav  li:hover a{
+color: var(--main-color);
+transition: all 1.5s .03s;
+}
+/* /// end nav-var//// */
+/* /// start header//// */
+.header{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.7)0% 100%),url(../images/hero\ img.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family: "Source Code Pro", monospace;
+
+}
+.header h3{
+font-size: 24px;
+font-weight: 600;
+color: rgb(255, 255, 255)
+}
+.header h1{
+font-size: 70px;
+font-weight: 700;
+color: rgb(255, 48, 91)
+
+}
+.header h4{
+font-size: 26px;
+font-weight: 300;
+color: rgb(255, 255, 255)
+}
+/* /// end header//// */
+/* /// start about//// */
+.about-me  {   
+padding-block: var(--padding-block);
+}
+.about-me .container .img-partition  {   
+border: 4px gray solid;
+border-radius: 10px;
+
+}
+.about-me .container .img-partition .cover-photo {   
+position: relative;
+top:50px;
+left:20px;
+overflow: hidden;
+
+}
+.about-me .container .img-partition .cover-photo .layer{   
+background-color: rgba(0,0,0,.7);
+position: absolute;
+top: -150;
+height: 100%;
+width: 100%;
+border-radius: 10px;
+transition: all 1s;
+
+}
+.about-me .container .img-partition .cover-photo:hover .layer{   
+
+top: 0;
+
+}
+.about-me .container .img-partition .cover-photo img{   
+    border-radius: 10px;
+
+}
+
+
+
+.about-me .container .contant-partition h2,p,ul{
+padding-block: var(--small-padding);
+}
+.about-me .container .contant-partition h2{
+   position: relative;
+}
+.about-me .container .contant-partition h2::before{
+    content:"" ;
+    height: 40px;
+    width: 5px;
+    background-color: #ff305b;
+    position: absolute;
+    left:-1%;
+
+}
+.about-me .container .w-70{
+   width: 70%;
+}
+.about-me .container .btn-primary{
+background-color: #ff305b;
+border: #ff305b;}
+.about-me .container .btn-primary span{
+    position: relative;
+}
+.about-me .container .btn-primary span::after{
+    content:"" ;
+    height: 2px;
+    width: 140px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom:4%;
+left: 0;
+}
+
+.about-me .container .btn-primary:hover{
+background-color: #7f0019;
+border: #7f0019;
+
+}
+.about-me .container .btn-primary:hover ::after{
+    content:"" ;
+    height: 2px;
+    width: 0px;
+    
+}
+.about-me .container .btn-secondary{
+background-color: #ff305b;
+border: #ff305b;}
+.about-me .container .btn-secondary:hover{
+background-color:#7f0019;
+border:#7f0019;
+}
+/* /// end about//// */
+/* /// start service//// */
+.Services{
+    padding-block: var(--padding-block);
+}
+.Services i{
+color: var(--main-color);}
+.Services .contant-services h2{
+   position: relative;
+
+}
+.Services .boxes .box:hover.box{
+background-color: white;}
+.Services .boxes .box:hover.box i{
+transform: scale(1.2);}
+ .contant-services h2{
+   position: relative;
+
+}
+ .contant-services h2::before{
+    content:"" ;
+    height: 2px;
+    width: 70px;
+    background-color:var(--main-color);
+    position: absolute;
+    bottom:-15%;
+left: 50%;
+translate: -50%;
+
+}
+ .contant-services h2::after{
+
+    content:"" ;
+    height: 2px;
+    width: 140px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom:-30%;
+    left: 50%;
+    translate: -50%;
+}
+/* /// end service//// */
+/* /// start Our-Portfolio //// */
+
+
+.Our-Portfolio   {
+    padding-block: var(--padding-block);
+  
+}
+.Our-Portfolio  .Our-Portfolio-pboxes .pboxes .pbox  .cover {
+   position: relative;
+   overflow: hidden;
+}
+.Our-Portfolio  .Our-Portfolio-pboxes .pboxes .pbox .cover .player {
+    background-color: rgba(0,0,0,.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -150;
+}
+.Our-Portfolio  .Our-Portfolio-pboxes .pboxes .pbox .cover:hover .player  {
+   
+    top: 0;
+}
+.Our-Portfolio  .Our-Portfolio-pboxes .pboxes .pbox .cover:hover .player i  {
+   
+color: var(--main-color);}
+
+/* /// end Our-Portfolio //// */
+/* /// start counter //// */
+.counter {
+padding-block: var(--padding-block);}
+.counter1 i {
+    color: var(--main-color);
+}
+
+.Our-Portfolio  .zorar{
+margin-inline:auto ;
+}
+/* /// end Our-Portfolio //// */
+/* /// start /* /// start Client's Feedback  //// * //// */
+
+
